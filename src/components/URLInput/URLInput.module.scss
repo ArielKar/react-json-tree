@@ -1,0 +1,73 @@
+.container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  color: #404040;
+
+  .customInput {
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid #e5e5e5;
+    transition: border-color 200ms ease;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+      border-color: #23adad;
+    }
+
+    &.error {
+      border-color: salmon;
+    }
+  }
+
+  .selectBox {
+    @extend .customInput;
+    cursor: pointer;
+    min-width: 80px;
+  }
+
+  .slashes {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .inputWrapper {
+    flex: 1;
+    min-width: 120px;
+
+    .urlInput {
+      @extend .customInput;
+      width: 100%;
+    }
+  }
+
+  .fetchBtn {
+    color: #edf7f7;
+    background-color: #23adad;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    height: 40px;
+    margin-left: 10px;
+    width: 100px;
+    transition: box-shadow 300ms ease, background-color 300ms ease;
+
+    &:hover {
+      background-color: #202087;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .errorMessage {
+    color: salmon;
+    margin: 0;
+  }
+}

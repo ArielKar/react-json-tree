@@ -1,0 +1,12 @@
+$main-max-width: 1048px;
+
+.App {
+}
+
+.App-main {
+  width: 95vw;
+  max-width: $main-max-width;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+}

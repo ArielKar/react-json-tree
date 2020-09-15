@@ -1,0 +1,46 @@
+.collaseBtn {
+  appearance: none;
+  border: none;
+  background: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: darkblue;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transition: all 300ms ease-in-out;
+  outline: none;
+
+  &:hover {
+    color: #000;
+    background-color: lightcyan;
+    border-color: lightblue;
+  }
+}
+
+.listWrapper {
+  list-style: none;
+
+  .key {
+    margin-right: 5px;
+  }
+}
+
+.lightBold {
+  font-weight: 600;
+}
+
+.string {
+  color: #008000;
+}
+
+.boolean {
+  color: #b22222;
+}
+
+.number {
+  color: #004ffd;
+}
